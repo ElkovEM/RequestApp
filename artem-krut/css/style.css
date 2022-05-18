@@ -1,0 +1,556 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+}
+
+.header {
+    min-height: 100vh;
+    background: linear-gradient(180deg, rgba(7, 21, 56, 0.31) 0%, #040e26 85.62%), URL(../css/img/bg.jpg) no-repeat center top / cover;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.menu {
+    margin: 0;
+    margin-left: 17px;
+    display: flex;
+    list-style-type: none;
+}
+
+.menu-item {
+    margin-right: 25px;
+    font-size:150%;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: white;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    color: #fff;
+}
+
+
+
+/* film */
+
+.film {
+    display: flex;
+    align-items: center;
+    margin-top: 90px;
+    color: #fff;
+}
+
+
+.film-subtitle {
+    font-size: 24px;
+    line-height: 150%;
+    opacity: 0.5;
+}
+
+.film-title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.film-description {
+    max-width: 570px;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.film-trailer {
+    margin: auto;
+
+}
+
+.film-details {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+}
+
+.time-icon {
+    width: 25px;
+    height: 100%;
+    border-radius: 50%;
+    margin-left: 11px;
+    margin-right: 11px;
+}
+
+.ratimg {
+    display: flex;
+    align-items: center;
+    margin-left: 27px;
+}
+
+.rating-icon {
+    margin-right: 12px;
+    width: 25px;
+    height: 100%;
+    border-radius: 5%;
+}
+/* session */
+
+.session {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 62px;
+    padding-top: 45px;
+    padding-bottom: 65px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.session-label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.session-block {
+    display: flex;
+}
+
+.session-date-item {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    text-align: center;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    justify-content: center;
+    margin-right: 15px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.session-month {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.session-day {
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.session-week {
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 22px;
+}
+
+.session-date-item:hover {
+    background-color: #0b2973;
+    color: white;
+}
+
+.select {
+    
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    padding: 18px;
+    padding-right: 150px;
+    color: #fff;
+    font-size: 18px;
+    background-color: #0b2973;
+}
+
+select:hover {
+    color: white;
+    background-color: #0b2973;
+}
+
+.session-cinema {
+    min-width: 450px;
+}
+.logo {
+    width: 75px;
+    height: 100%;
+    border-radius: 50%;
+    margin-left: 11px;
+}
+.login-logo {
+    width: 35px;
+    height: 100%;
+    border-radius: 50%;
+    margin-left: 11px;
+}
+
+.main-cinema {
+    min-height: 100vh;
+    background-color: black;
+    background: linear-gradient(180deg, rgba(16, 9, 153, 0.8), #040e26 73.62%);
+}
+.logo-premier {
+    width: 50px;
+    height: 100%;
+    border-radius: 50%;
+    margin-left: 11px;
+}
+.Premiersofmounth {
+    top: 5%;
+    font-size: 50px;
+    background-color: rgba( 0,0,0,0.7);
+}
+.connection{
+
+}
+.Contact {
+    background-color: rgba( 0,0,0,0.7);
+    margin: 0;
+    margin-left: 17px;
+    display: flex;
+    list-style-type: none;
+}
+.contact-item {
+    margin-right: 25px;
+    
+}
+
+.sm {
+    width: 35px;
+    height: 75%;
+    border-radius: 5%;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+/* Слайдер тут начинается*/
+@keyframes fade {
+    0%
+{
+    opacity: 0;
+}
+
+11.11% {
+    opacity: 1;
+}
+
+33.33% {
+    opacity: 1;
+}
+
+44.44% {
+    opacity: 0;
+}
+
+100% {
+    opacity: 0;
+}
+
+}
+
+
+.fadein {
+    
+}
+
+    .fadein img {
+        min-width: 50%;
+        max-width: 100%;
+       
+        width: 100%;
+        height: 70%;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-30%);
+        position: absolute;
+        animation-name: fade;
+        animation-duration: 9s;
+        animation-iteration-count: infinite;
+    }
+
+        .fadein img:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .fadein img:nth-child(2) {
+            animation-delay: 3s;
+        }
+
+        .fadein img:nth-child(3) {
+            animation-delay: 6s;
+        }
+
+
+
+/* Здесь начинается список фильмов?? */
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    height: 60px;
+    padding-left: 50px;
+}
+
+
+
+.header__search {
+    padding: 8px;
+    border: 2px solid #1a191f;
+    border-radius: 5px;
+    outline: none;
+}
+
+.movies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.movie {
+    width: 240px;
+    margin: 10px;
+    position: relative;
+}
+
+.movie__cover-inner {
+    position: relative;
+    height: 360px;
+}
+
+.movie__cover {
+    max-width: 100%;
+    height: 100%;
+}
+
+.movie__cover--darkened {
+    background-color: #000000;
+    opacity: 0.1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+    .movie__cover--darkened:hover {
+        background-color: grey;
+        cursor: pointer;
+    }
+
+.movie__info {
+    padding: 10px 0px;
+}
+
+.movie__title {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.movie__category {
+    font-size: 14px;
+    color: yellow;
+}
+
+.movie__average {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 0;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a191f;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.movie__average--green {
+    border: 1px solid green;
+}
+
+.movie__average--orange {
+    border: 1px solid orange;
+}
+
+.movie__average--red {
+    border: 1px solid red;
+}
+
+
+
+/* Вкладка кинотеатры */
+
+.cinemas {
+    
+}
+.text-cinema {
+    font-size: 30px;
+    text-align: center
+}
+
+
+
+
+/* Вроде как тут начинается стиль отправки формы */
+.form {
+    max-width: 550px;
+    margin: 0px auto;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.form_body {
+}
+
+.form_title {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0px 0px 30px 0px;
+}
+
+.form_item {
+    margin: 0px 0px 5px 0px;
+}
+
+.form_label {
+    font-size: 18px;
+    display: block;
+    margin: 0px 0px 10px 0px;
+}
+
+.form_input {
+    height: 50px;
+    padding: 0px 5px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 18px;
+}
+.form_input._error{
+    box-shadow: 0 0 15px red;
+}
+
+
+textarea.form_input {
+    min-height: 120px;
+    max-height: 500px;
+    resize: vertical;
+    padding: 5px;
+}
+.checkbox {
+
+}
+.checkbox._error .checkbox_label::before{
+    box-shadow: 0 0 15px red;
+}
+
+.checkbox_input {
+    display: none;
+
+}
+.checkbox_input:checked + .checkbox_label::after{
+    transform:scale(1);
+}
+.checkbox_label {
+    font-size: 16px;
+    line-height: 140%;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+
+}
+
+    .checkbox_label::before {
+        content: "";
+        align-self: flex-start;
+        flex: 0 0 24px;
+        height: 24px;
+        background-color: #fff;
+        border-radius: 4px;
+        margin: 0px 10px 0px 0px;
+        cursor:pointer;
+
+    }
+
+    .checkbox_label::after {
+        transition: transform 0.25s ease 0s;
+        content: "";
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        background-color: darkblue;
+        border-radius: 4px;
+        transform: scale(0);
+        cursor: pointer;
+    }
+    .checkbox_label a{
+        color:lightblue;
+
+    }
+.form_button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60px;
+    background-color: #0e0f69;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 5px 0 #0a0b4d;
+    transition: background-color 0.5s ease 0s;
+    position: relative;
+    top: 0;
+}
+
+    .form_button:hover {
+        background-color: #131594;
+    }
+
+    .form_button:active {
+        top: 3px;
+        box-shadow: 0 2px 0 #0a0b4d;
+    }

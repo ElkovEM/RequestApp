@@ -1,0 +1,17 @@
+﻿@using RequestApp.ViewModels;
+@model MoviesListViewModel;
+
+<h1>Все фильмы</h1>
+<h3>@Model.currentCategory</h3>
+<div class="row mt-5 mb-2">
+    @{
+        foreach(var movie in Model.allMovies) {
+            <div class = "col-lg-4">
+                <img class="img-thumbnail" src="@movie.image" alt="@movie.name"/>
+                <h2>@movie.name</h2>
+                <p>@movie.shortDescription</p>
+                <p><a class="btn btn-warning" href = "#">Проголосовать</a></p>
+            </div>
+        }
+    }   
+</div>
