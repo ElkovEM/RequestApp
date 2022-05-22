@@ -46,7 +46,7 @@ namespace RequestApp.Mocks
 
                     new Movie
                     {
-                        name = "Наруто: Последний фильм (2014)",
+                        name = "Lf",
                         shortDescription = "The Last: Naruto the Movie",
                         longDescription = "Маленькая Ханаби похищена инопланетным злодеем, который вдобавок хочет уничтожить Землю. " +
                         "Наруто просто обязан спасти младшую сестру Хинаты – девушки, в которую он влюблён. " +
